@@ -1,0 +1,106 @@
+.brand-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+}
+
+.brand-logo-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-icon {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.brand-v {
+  /* Using a linear gradient to make the left arm orange and right arm blue */
+  background: linear-gradient(to right, var(--color-secondary) 50%, var(--color-primary) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  transform: skewX(-5deg);
+}
+
+.brand-g {
+  color: var(--color-primary);
+  transform: skewX(-5deg);
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-primary);
+  margin-top: 5px;
+}
+
+.brand-logo-bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2px;
+  width: 100%;
+  padding-left: 55px; /* Aligns with "SmartFile" */
+}
+
+.brand-solutions {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: var(--color-text-light);
+}
+
+.brand-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--color-text-light);
+  opacity: 0.5;
+}
+
+/* Light mode for Footer/Dark Backgrounds */
+.brand-logo.logo-light .brand-g {
+  color: var(--color-text-inverse);
+}
+
+.brand-logo.logo-light .brand-v {
+  background: linear-gradient(to right, var(--color-secondary) 50%, var(--color-text-inverse) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-logo.logo-light .brand-name {
+  color: var(--color-text-inverse);
+}
+
+.brand-logo.logo-light .brand-solutions {
+  color: #cbd5e1;
+}
+
+.brand-logo.logo-light .brand-line {
+  background-color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+  .brand-icon {
+    font-size: 2rem;
+  }
+  .brand-name {
+    font-size: 1.5rem;
+  }
+  .brand-logo-bottom {
+    padding-left: 45px;
+  }
+  .brand-solutions {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+}
