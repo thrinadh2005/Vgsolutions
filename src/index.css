@@ -170,6 +170,19 @@ button {
   margin-right: auto;
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-12) 0;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-8);
+  }
+}
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }

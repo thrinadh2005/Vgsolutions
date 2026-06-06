@@ -73,7 +73,15 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding-top: var(--spacing-12);
+  }
   .footer-top {
     grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+  .footer-heading {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-4);
   }
 }

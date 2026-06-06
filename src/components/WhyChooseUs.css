@@ -77,3 +77,25 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .why-section {
+    padding: var(--spacing-12) 0;
+  }
+  
+  .why-grid {
+    gap: var(--spacing-4);
+  }
+  
+  .why-card {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+  
+  .why-header {
+    margin-bottom: var(--spacing-8);
+  }
+  
+  .why-title {
+    font-size: 1.15rem;
+  }
+}
