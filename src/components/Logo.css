@@ -12,27 +12,21 @@
   gap: 8px;
 }
 
-.brand-icon {
+.brand-icon-wrapper {
   display: flex;
-  font-size: 2.5rem;
-  font-weight: 900;
-  font-style: italic;
-  line-height: 1;
-  letter-spacing: -2px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: white; /* Ensures the logo looks good if navbar isn't perfectly white */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.brand-v {
-  /* Using a linear gradient to make the left arm orange and right arm blue */
-  background: linear-gradient(to right, var(--color-secondary) 50%, var(--color-primary) 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  transform: skewX(-5deg);
-}
-
-.brand-g {
-  color: var(--color-primary);
-  transform: skewX(-5deg);
+.brand-icon-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .brand-name {
@@ -67,15 +61,7 @@
 }
 
 /* Light mode for Footer/Dark Backgrounds */
-.brand-logo.logo-light .brand-g {
-  color: var(--color-text-inverse);
-}
-
-.brand-logo.logo-light .brand-v {
-  background: linear-gradient(to right, var(--color-secondary) 50%, var(--color-text-inverse) 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* Removed .brand-v and .brand-g light overrides */
 
 .brand-logo.logo-light .brand-name {
   color: var(--color-text-inverse);
@@ -90,8 +76,9 @@
 }
 
 @media (max-width: 768px) {
-  .brand-icon {
-    font-size: 2rem;
+  .brand-icon-wrapper {
+    width: 36px;
+    height: 36px;
   }
   .brand-name {
     font-size: 1.5rem;
